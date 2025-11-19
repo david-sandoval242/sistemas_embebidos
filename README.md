@@ -7,6 +7,6 @@ DOCENTE: BREYNER POSSO
 
 ### Integrantes
 **Andrés Felipe Marín Ramírez: 202502859**\
-**David Esteban Sandoval Flórez: 202507595**\
+**David Esteban Sandoval Flórez: 202507595**
 
 ## Laboratorios de Diseño e Implementación de Sistemas Embebidos
