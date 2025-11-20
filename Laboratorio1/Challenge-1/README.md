@@ -210,7 +210,7 @@ void loop() {
   }
 }
 ```
-###. 5 Pruebas y validación
+### 5. Pruebas y validación
 
 [Enlace al archivo con el código Arduino/C++](./Lab1-Challenge1/Lab1-Challenge1.ino)
 
