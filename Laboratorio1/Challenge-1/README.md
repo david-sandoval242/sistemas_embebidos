@@ -47,7 +47,7 @@ The system must meet the following conditions:
 
 ### 3. Diseño de Hardware e Integración
 
-![3. Diseño de Harware e Integración](Diseño-Hardware-Sim.png)
+![3. Diseño de Harware e Integración](Challenge1-Diseño-Hardware-Sim.png)
 
 ### 4. Diseño y desarrollo del firmware
 
