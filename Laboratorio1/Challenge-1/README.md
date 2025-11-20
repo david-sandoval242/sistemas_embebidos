@@ -70,9 +70,11 @@ INICIO CICLO
   SI (estado = Ejecucion) & (tiempoActual - ultimaActualización) > intervaloLEDS ENTONCES
     SET ultimaActualización ← tiempoActual
 
-    EJECUTA apagar_leds
+    PARA I DE 1 A 4
+      APAGA LED No. I
+    FIN PARA
 
-    EJECUTA encender_led_actual
+    ENCENDER LED No. ledEncendido
 
     SET ledEncendido ← ledEncendido + 1
 
