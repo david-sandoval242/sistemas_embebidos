@@ -35,6 +35,5 @@ The system must meet the following conditions:
 - CON-05: Se dbe hacer una simulación usando [Wokwi](https://wokwi.com/)
 - CON-06: Se debe hacer la implementación del sistema usando una placa de desarrollo ESP32 S3 y una protoboard
 
-- 
 [Enlace a la simulación](https://wokwi.com/projects/445808350528060417)
 
