@@ -47,6 +47,7 @@ The system must meet the following conditions:
 
 ### 3. Diseño de Hardware e Integración
 
+![3. Diseño de Harware e Integración](Diseño-Hardware-Sim.png)
 
 
 [Enlace a la simulación](https://wokwi.com/projects/445808350528060417)
