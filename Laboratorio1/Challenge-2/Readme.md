@@ -35,7 +35,7 @@ Monitor.
 1. Placa de desarrollo ESP32 S3 DevKit C
 2. Módulo para celdas de carga HX711
 3. 4 celdas de carga
-4. 4 Pantalla LCD 16x2 con protocolo I2C
+4. Pantalla LCD 16x2 con protocolo I2C
 5. 15 jumpers variados
 
 ### 3. Diseño de Hardware e Integración
@@ -62,6 +62,8 @@ INICIO CICLO
   MOSTRAR TEXTO LCD " Kg"
 
   MOSTRAR TEXTO CONSOLA SERIAL "Peso: " + peso + " Kg"
+
+  DEMORA 300 ms
 FIN CICLO
 ```
 
