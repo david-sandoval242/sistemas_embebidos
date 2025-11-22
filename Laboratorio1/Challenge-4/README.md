@@ -56,7 +56,7 @@ e. (5p) The X KEY will be used to stop the motor immediately.
 
 ### 3. Diseño de Hardware e Integración
 
-![3. Diseño de Harware e Integración](Challenge3-Diseño-Hardware-Sim.png)
+![3. Diseño de Harware e Integración](Challenge4-Diseño-Hardware-Sim.png)
 
 ### 4. Diseño y desarrollo del firmware
 
