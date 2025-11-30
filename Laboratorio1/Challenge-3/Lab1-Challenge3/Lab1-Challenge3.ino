@@ -4,14 +4,18 @@
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-const int DHT_PIN = 11;
+const int pinLM35 = 6
+const int DHT_PIN = 42;
 DHTesp dhtSensor;
 
-const int pinSDA = 8;
-const int pinSCL = 9;
+const int pinSDA = 40;
+const int pinSCL = 39;
 
-unsigned long ultimaActualizacion = 0;
+unsigned long ultimaActualizacion;
 const unsigned long intervalo = 5000;
+
+float valorLecturaLM35;
+float temperaturaLM35;
 
 void setup() {
   //Inicializar la comunicación por puerto serial
@@ -28,6 +32,11 @@ void setup() {
 
   Serial.println("Estación de tiempo");
   dhtSensor.setup(DHT_PIN, DHTesp::DHT22);
+
+  ultimaActualizacion = 0;
+
+  valorLecturaLM35 = 0;
+  temperaturaLM35 = 0;
 }
 
 void loop() {
@@ -36,6 +45,9 @@ void loop() {
   {
     ultimaActualizacion = millis();
     TempAndHumidity  data = dhtSensor.getTempAndHumidity();
+
+    valorLecturaLM35 = analogRead(pinLM35);
+    temperaturaLM35 = (valorLecturaLM35 * 3.3 * 100.0) / 4095.0;
 
     lcd.clear();
     lcd.setCursor(0, 0);
@@ -47,6 +59,8 @@ void loop() {
 
     Serial.println("Temperatura: " + String(data.temperature, 2) + "°C");
     Serial.println("Humedad: " + String(data.humidity, 1) + "%");
+
+    Serial.println("Temperatura LM35: " + String(temperaturaLM35, 2)+ " ºC");
     Serial.println("---");  
   }
 }
